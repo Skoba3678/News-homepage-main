@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p{
+            width: 2px;
+            height: 100px;
+            background-color: blue;
+            /* display: inline-block; */
+            margin: auto;
+        }
+
+        p::before{
+            content: "";
+            position: absolute;
+            width: 10px;
+            right: 167px;
+            left: 167px;
+            height: 10px;
+            border-radius: 100%;
+            background-color: blue;
+            margin: auto; 
+        }
+        span{
+            width: 2px;
+            height: 100px;
+            background-color: blue;
+            /* display: inline-block; */
+            margin: auto;
+        }
+
+        span::before{
+            content: "";
+            position: absolute;
+            width: 10px;
+            right: 167px;
+            left: 167px;
+            height: 10px;
+            border-radius: 100%;
+            background-color: blue;
+            margin: auto; 
+        }
+        /* p::after{
+            content: "";
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            border-radius: 100%;
+            background-color: red;  
+        } */
+    </style>
+</head>
+<body>
+
+    <p></p>
+    <!-- <br> -->
+    <p></p>
+    <p></p>
+    <span></span>
+    
+</body>
+</html>
